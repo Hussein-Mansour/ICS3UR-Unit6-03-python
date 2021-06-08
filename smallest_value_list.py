@@ -9,21 +9,19 @@
 import random
 
 
-def smallest_random_number(random_number):
-    # this functions uses a for ... in loop
+def smallest_random_number(smallest_number):
+    # this function get the smallest number in list
+    smallest = smallest_number[0]
 
-    smallest = 0
-
-    for counter in random_number:
-        smallest = min(random_number)
-
+    for counter in smallest_number:
+        if counter < smallest:
+            smallest = counter
     return smallest
 
 
 def main():
     # this function uses an list
     random_number = []
-    random_number.sort()
     # start
     print("Starting ...")
     print("\nHere is a list of random numbers:")
